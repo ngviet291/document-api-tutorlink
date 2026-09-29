@@ -1,5 +1,5 @@
 info:
-  name: resgister-student
+  name: register-student
   type: http
   seq: 2
 
@@ -11,17 +11,19 @@ http:
     data: |-
       {
         "fullname": "Nguyễn Văn A",
-        "email": "student3@tutorlink.com",
+        "email": "student33@tutorlink.com",
         "password": "Student@123",
         "phone": "0901234567",
         "gender": "MALE",
         "dateOfBirth": "2005-05-15",
-        "address": "Thủ Đức, TP.HCM",
+        "address": {
+          "street": "15 Võ Văn Ngân",
+          "ward": "Phường Linh Chiểu",
+          "province": "TP. Hồ Chí Minh"
+        },
         "grade": "12",
-        "school": "THPT Nguyễn Hữu Cầu",
         "learningGoal": "Cải thiện kỹ năng lập trình"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true
