@@ -21,7 +21,6 @@ http:
         "education": "Đại học Bách Khoa TP.HCM"
       //   "subjectId": "UUID_CUA_SUBJECT"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

@@ -21,7 +21,6 @@ http:
         "school": "THPT Nguyễn Hữu Cầu",
         "learningGoal": "Cải thiện kỹ năng lập trình"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true
