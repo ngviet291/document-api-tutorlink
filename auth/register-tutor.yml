@@ -25,7 +25,6 @@ http:
         "education": "Đại học Bách Khoa TP.HCM",
         "subjectId": "01a0eb0f-d346-75b2-9dee-7524cb5a1466"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true
