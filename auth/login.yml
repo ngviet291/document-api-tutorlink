@@ -13,7 +13,6 @@ http:
         "email": "student@gmail.com",
         "password": "Student@123"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

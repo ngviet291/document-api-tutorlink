@@ -11,15 +11,19 @@ http:
     data: |-
       {
         "fullname": "Nguyễn Văn Tutor",
-        "email": "tutor3@tutorlink.com",
+        "email": "tutors32@tutorlink.com",
         "password": "Tutor@123",
         "phone": "0912345678",
         "gender": "MALE",
         "dateOfBirth": "1998-03-20",
-        "address": "Quận 1, TP.HCM",
+        "address": {
+          "street": "12 Nguyễn Huệ",
+          "ward": "Phường Bến Nghé",
+          "province": "TP. Hồ Chí Minh"
+        },
         "experienceYears": 5,
-        "education": "Đại học Bách Khoa TP.HCM"
-      //   "subjectId": "UUID_CUA_SUBJECT"
+        "education": "Đại học Bách Khoa TP.HCM",
+        "subjectId": "01a0eb0f-d346-75b2-9dee-7524cb5a1466"
       }
   auth: inherit
 
