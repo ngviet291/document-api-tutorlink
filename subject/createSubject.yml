@@ -1,0 +1,42 @@
+info:
+  name: createSubject
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/subjects"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Toán lớp 10",
+        "description": "Môn Toán đại số và hình học không gian THPT",
+        "category": "Toán học"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        if (res.getStatus() === 200) {
+          bru.setEnvVar("subjectId", res.body.data.id);
+        }
+    - type: tests
+      code: |-
+        test("tạo môn học trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+        });
+        test("response đúng dữ liệu đã gửi", function () {
+          expect(res.body.data.id).to.be.a("string").and.not.empty;
+          expect(res.body.data.name).to.equal("Toán lớp 10");
+          expect(res.body.data.category).to.equal("Toán học");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

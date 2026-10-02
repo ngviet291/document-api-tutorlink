@@ -1,0 +1,25 @@
+info:
+  name: deleteSubject
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/subjects/{{subjectId}}"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("xóa trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+          expect(res.body.message).to.equal("Xóa môn học thành công");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

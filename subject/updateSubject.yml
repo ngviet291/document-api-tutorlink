@@ -1,0 +1,36 @@
+info:
+  name: updateSubject
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/subjects/{{subjectId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Toán lớp 10 Nâng cao abc",
+        "description": "Môn Toán đại số nâng cao",
+        "category": "Toán học"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("cập nhật trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+        });
+        test("tên đã được cập nhật", function () {
+          expect(res.body.data.name).to.equal("Toán lớp 10 Nâng cao");
+          expect(res.body.data.description).to.equal("Môn Toán đại số nâng cao");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

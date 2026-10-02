@@ -1,0 +1,29 @@
+info:
+  name: getAllSubjects
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/subjects"
+  auth: none
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("lấy danh sách trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+        });
+        test("data là mảng và chứa môn vừa tạo", function () {
+          expect(res.body.data).to.be.an("array");
+          const ids = res.body.data.map(function (s) { return s.id; });
+          expect(ids).to.include(bru.getEnvVar("subjectId"));
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
