@@ -13,7 +13,6 @@ http:
         "email": "admin@gmail.com",
         "password": "Admin@123"
       }
-  auth: none
 
 runtime:
   scripts:
