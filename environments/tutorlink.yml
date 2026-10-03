@@ -3,14 +3,14 @@ variables:
   - name: baseUrl
     value: http://localhost:8080
   - name: accessToken
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWEwZmU0ZC02ZjBhLTc4ODYtYjM3ZS0xZDhiNjQ2MTczNzciLCJzY29wZSI6IlJPTEVfQURNSU4iLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTA5NzkxMjYsImlhdCI6MTc5MDk3NTUyNiwianRpIjoiZjgxYmIwMDEtODU2Yy00MzIzLTg0YjMtYTk2MTFmZWUzZTBhIiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.rgLXz-eIcKXCGXVZEDhMhtMBosq-rIrHFShRYw8STMinCbc8NG01rH7DBS8ptcg8d8aCISRQRPwbQ4Wb2XBr7w
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWEwZmU0ZC02ZjBhLTc4ODYtYjM3ZS0xZDhiNjQ2MTczNzciLCJzY29wZSI6IlJPTEVfQURNSU4iLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTEwMTU0ODYsImlhdCI6MTc5MTAxMTg4NiwianRpIjoiNWU5ZGY3ZGMtNTg3MS00MGUwLTkxOWMtYzIyYzQ4M2I2Mjg0IiwidXNlcm5hbWUiOiJhZG1pbkBnbWFpbC5jb20ifQ.qncn_kPQNBq5t6CBt0xiVq_54iubfLlU1xxRuo6vpSav-IRV0ugBkiANsKP9cdF1qGAjnVBZuDfivudW3c_Mmw
     description: Tự động gán sau khi chạy auth/login (admin)
   - name: refreshToken
-    value: 4318cefd-1103-4f01-ae96-f121951199b8
+    value: 06ebffc0-45f6-4381-90b7-cd7802f5c4f6
     description: Tự động gán sau khi chạy auth/login
   - name: studentToken
     value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWEwZmU0ZC02ZDYxLTcyNDktOTNiYi1iNjk0MDYzNzU1MGYiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTA5NzgyMjIsImlhdCI6MTc5MDk3NDYyMiwianRpIjoiN2Q2NjcxZDgtM2E5MS00YmY1LTk2ZmItNjQxNWQ5NTI4ZGM1IiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.X2mOC42dY3f1WFW63wibu40zqXo742EzUwrvx75oWXMjYNWBa8r6Spo8MBstECQmawfuXWa_baYaKhRczrShwA
     description: Tự động gán sau khi chạy auth/loginStudent
   - name: subjectId
-    value: 3b37696c-87e1-499c-956b-90847a61ed6f
+    value: 01a100a0-a0a1-7893-8145-e4fb7b788638
     description: Tự động gán sau khi chạy subject/createSubject
