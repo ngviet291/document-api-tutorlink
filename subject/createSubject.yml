@@ -20,13 +20,13 @@ runtime:
   scripts:
     - type: after-response
       code: |-
-        if (res.getStatus() === 200) {
+        if (res.getStatus() === 201) {
           bru.setEnvVar("subjectId", res.body.data.id);
         }
     - type: tests
       code: |-
-        test("tạo môn học trả 200", function () {
-          expect(res.getStatus()).to.equal(200);
+        test("tạo môn học trả 201", function () {
+          expect(res.getStatus()).to.equal(201);
         });
         test("response đúng dữ liệu đã gửi", function () {
           expect(res.body.data.id).to.be.a("string").and.not.empty;

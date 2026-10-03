@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "name": "Toán lớp 10 Nâng cao abc",
+        "name": "Toán lớp 10 Nâng cao",
         "description": "Môn Toán đại số nâng cao",
         "category": "Toán học"
       }
