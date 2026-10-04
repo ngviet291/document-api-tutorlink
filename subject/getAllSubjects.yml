@@ -6,7 +6,15 @@ info:
 http:
   method: GET
   url: "{{baseUrl}}/api/v1/subjects"
-  auth: none
+  params:
+    - name: limit
+      value: "2"
+      type: query
+      disabled: true
+    - name: cursor
+      value: 01a1089a-e567-778e-ae65-968247429420
+      type: query
+      disabled: true
 
 runtime:
   scripts:
@@ -15,10 +23,28 @@ runtime:
         test("lấy danh sách trả 200", function () {
           expect(res.getStatus()).to.equal(200);
         });
-        test("data là mảng và chứa môn vừa tạo", function () {
-          expect(res.body.data).to.be.an("array");
-          const ids = res.body.data.map(function (s) { return s.id; });
+
+        test("data là object phân trang", function () {
+          expect(res.body.data).to.be.an("object");
+          expect(res.body.data.content).to.be.an("array");
+          expect(res.body.data).to.have.property("hasNext");
+          expect(res.body.data).to.have.property("nextCursor");
+        });
+
+        test("số phần tử không vượt quá limit", function () {
+          expect(res.body.data.content.length).to.be.at.most(2);
+        });
+
+        test("content chứa môn vừa tạo", function () {
+          const ids = res.body.data.content.map(function (s) { return s.id; });
           expect(ids).to.include(bru.getEnvVar("subjectId"));
+        });
+
+        test("nextCursor là id của phần tử cuối trang", function () {
+          const d = res.body.data;
+          if (d.hasNext) {
+            expect(d.nextCursor).to.equal(d.content[d.content.length - 1].id);
+          }
         });
 
 settings:
