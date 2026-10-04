@@ -1,0 +1,35 @@
+info:
+  name: Đăng ký Tutor
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/auth/register/tutor
+  body:
+    type: json
+    data: |-
+      {
+        "fullname": "Tutor Application Test",
+        "email": "tutor.application@gmail.com",
+        "password": "Tutor@123",
+        "phone": "0901234568",
+        "gender": "MALE",
+        "dateOfBirth": "2002-08-20",
+        "address": {
+          "street": "456 Nguyen Van Cu",
+          "ward": "Ward 4",
+          "province": "Ho Chi Minh City"
+        },
+        "experienceYears": 2,
+        "education": "Bachelor of Software Engineering",
+        "subjectId": "01a106ed-cead-7591-a1b2-f9cf239284c0"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
