@@ -1,0 +1,22 @@
+info:
+  name: updateStatus
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/v1/users/01a10c50-d444-7434-8a09-77df15ed8ba6/status"
+  body:
+    type: json
+    data: |-
+      {
+        "userStatus": "BANNED"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
