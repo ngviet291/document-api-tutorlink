@@ -1,0 +1,23 @@
+info:
+  name: rejectTutor
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/v1/users/01a10a34-98b9-7045-b535-e25a340fd4dc/approve"
+  body:
+    type: json
+    data: |-
+      {
+        "approved": false,
+        "reason": "Chứng chỉ không hợp lệ"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

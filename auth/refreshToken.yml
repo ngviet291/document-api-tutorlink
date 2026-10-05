@@ -12,7 +12,6 @@ http:
       {
         "refreshToken": "01a0c9b4-337e-7b91-9f18-cc9ceb5a595d"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

@@ -1,0 +1,16 @@
+info:
+  name: getUserById
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/users/01a10a34-99f0-70b1-ad38-023132a7ea5a"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

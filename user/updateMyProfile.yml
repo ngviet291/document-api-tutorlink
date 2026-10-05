@@ -1,0 +1,30 @@
+info:
+  name: updateMyProfile
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/users/me"
+  body:
+    type: json
+    data: |-
+      {
+              "fullname": "Nguyen Van A Updated",
+              "phone": "0901234568",
+              "gender": "MALE",
+              "dateOfBirth": "2000-01-01",
+              "address": {
+                "street": "123 Nguyen Hue",
+                "city": "Ho Chi Minh",
+                "district": "District 1"
+              }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

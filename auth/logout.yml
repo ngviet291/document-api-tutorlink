@@ -13,7 +13,6 @@ http:
         "accessToken": "{{accessToken}}",
         "refreshToken": "{{refreshToken}}"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true
