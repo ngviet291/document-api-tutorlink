@@ -3,10 +3,10 @@ variables:
   - name: baseUrl
     value: http://localhost:8080
   - name: accessToken
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDg5YS1lNmI1LTcyOGUtOGVmZi0zNjU4MzgzNTAzMGIiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxMTQ5Mzc4LCJpYXQiOjE3OTExNDU3NzgsImp0aSI6IjVhZTkxNTQ4LWRkM2YtNDBmMi04OTBmLTdiMDdhYzU1YWIzMSIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.5kWzKhcw6oqb7C0bHWCsVtd8epv1wcZx1gXyrMkvtH8fjYzEbf05Sl8_YRoZ-SA5nfc2wVCWg9dj2WAT4T3wtQ
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMWNjOC1jMmY5LTdkZjMtOGMzNy05ZjQ5YmI4ZDdmMGMiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTE0ODkxNTgsImlhdCI6MTc5MTQ4NTU1OCwianRpIjoiNmRmNzZmNDgtZGMyMi00YTA3LWE2MmItNDA5ZjMzNjFhNGNhIiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.gu9qvUF7s0dBAs4tKzf2T712rXzQo5Lli5BvoD_Mf70qmDp949NuP5OfPxCmp6FbqXeOSmItPCRust3VYHRrSA
     description: Tự động gán sau khi chạy auth/login (admin)
   - name: refreshToken
-    value: 760879b6-ab5a-478f-9444-146752d11977
+    value: 6979cf91-3063-4bc1-8f8f-b7fb6e22d635
     description: Tự động gán sau khi chạy auth/login
   - name: studentToken
     value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWEwZmU0ZC02ZDYxLTcyNDktOTNiYi1iNjk0MDYzNzU1MGYiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTA5NzgyMjIsImlhdCI6MTc5MDk3NDYyMiwianRpIjoiN2Q2NjcxZDgtM2E5MS00YmY1LTk2ZmItNjQxNWQ5NTI4ZGM1IiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.X2mOC42dY3f1WFW63wibu40zqXo742EzUwrvx75oWXMjYNWBa8r6Spo8MBstECQmawfuXWa_baYaKhRczrShwA
@@ -14,3 +14,5 @@ variables:
   - name: subjectId
     value: 01a108a3-3f17-7d5a-b8d9-c86d2e5e939f
     description: Tự động gán sau khi chạy subject/createSubject
+  - name: walletId
+    value: 01a11cdb-c53f-7706-98cf-814a33a34a64

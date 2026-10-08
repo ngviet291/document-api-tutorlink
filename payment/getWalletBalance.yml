@@ -1,0 +1,39 @@
+info:
+  name: getWalletBalance
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/payments/wallet/balance"
+  auth: inherit
+
+docs:
+  content: Đăng nhập bằng tài khoản tutor ở auth/login trước (tutor@gmail.com / Tutor@123) để accessToken là của tutor. Ví được tạo tự động (số dư 0) ở lần gọi đầu tiên.
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        if (res.getStatus() === 200) {
+          bru.setEnvVar("walletId", res.body.data.walletId);
+        }
+    - type: tests
+      code: |-
+        test("xem số dư trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+        });
+        test("code PAYMENT_200", function () {
+          expect(res.body.code).to.equal("PAYMENT_200");
+        });
+        test("có walletId và balance", function () {
+          expect(res.body.data.walletId).to.be.a("string").and.not.empty;
+          expect(res.body.data.balance).to.be.a("number");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
