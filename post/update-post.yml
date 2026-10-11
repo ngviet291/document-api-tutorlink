@@ -4,16 +4,16 @@ info:
   seq: 4
 
 http:
-  method: POST
-  url: "{{baseUrl}}/api/v1/posts"
+  method: PUT
+  url: "{{baseUrl}}/api/v1/posts/01a12b7b-d873-7d0b-806a-cbde356a7e0a"
   body:
     type: json
     data: |-
       {
         "title": "Tìm gia sư Toán lớp 10 tại Quận 7",
         "content": "Cần tìm gia sư Toán lớp 10, học 3 buổi mỗi tuần tại Quận 7.",
-        "type": "FIND_TUTOR",
-        "subjectId": "01a0e605-af7a-70c4-81fd-6e49c7a6e24e",
+        "type": "FIND_STUDENT",
+        "subjectId": "01a12b5a-f700-7381-98f1-02d85c7ef22c",
         "educationLevel": "HIGH_SCHOOL",
         "teachingMode": "OFFLINE",
         "address": {

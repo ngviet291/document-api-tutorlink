@@ -2,4 +2,7 @@ name: tutorlink
 variables:
   - name: baseUrl
     value: http://localhost:8080
-    description: ""
+  - name: subjectId
+    value: 01a12b76-37ae-7e09-99ad-dbc6d5bd9064
+  - name: walletId
+    value: 01a12b79-fb0a-7b7b-82ab-3c1f20a6342e

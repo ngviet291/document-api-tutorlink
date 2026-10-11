@@ -1,0 +1,23 @@
+info:
+  name: applyForTutorPost
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/applications
+  body:
+    type: json
+    data: |-
+      {
+        "postId": "01a12b5b-f57c-7e3e-9486-09d54bf8b2a4",
+        "message": "Em muốn học Toán lớp 12 với thầy."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
