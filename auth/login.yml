@@ -10,9 +10,12 @@ http:
     type: json
     data: |-
       {
-        "email": "student@gmail.com",
-        "password": "Student@123"
+        "email": "admin@gmail.com",
+        "password": "Admin@123"
       }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

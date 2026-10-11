@@ -1,0 +1,9 @@
+info:
+  name: notification
+  type: folder
+  seq: 4
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMmFhMS03MDA4LTc3MDktYjg4ZC1kODFmOTZmY2U5OWIiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxNzIwMjQzLCJpYXQiOjE3OTE3MTY2NDMsImp0aSI6ImQyOGVjZTNhLTRmNGYtNGFhNC05OTZlLTYwNWQyYWRlMzkzZCIsInVzZXJuYW1lIjoidHV0b3JAZ21haWwuY29tIn0.MsJRaXJ6pTmlxMOmo93c0b1t2d5Ea_hdSQb7t4a_cifBflwB3EIWTY4hN_qVRmtvyfD6C41TEcrQxmq6if1FBQ
