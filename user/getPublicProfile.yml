@@ -5,8 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/users/01a10c43-8d98-72fe-bfc1-d4de58e19858/public-profile"
-  auth: inherit
+  url: "{{baseUrl}}/api/v1/users/01a12b30-0418-7516-8c0a-2e5fe7103fc3/public-profile"
 
 settings:
   encodeUrl: true

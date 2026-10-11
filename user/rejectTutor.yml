@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "approved": false,
-        "reason": "Chứng chỉ không hợp lệ"
+        "approved": true,
+        "reason": "Chứng chỉ hợp lệ"
       }
   auth: inherit
 

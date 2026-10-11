@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{baseUrl}}/api/v1/notifications/{{notificationId}}/read"
+  url: "{{baseUrl}}/api/v1/notifications/01a12aa1-7171-7a3f-abe5-7faa571288ba/read"
   auth: inherit
 
 settings:

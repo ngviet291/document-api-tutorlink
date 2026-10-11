@@ -10,10 +10,9 @@ http:
     type: json
     data: |-
       {
-        "accessToken": "{{accessToken}}",
-        "refreshToken": "{{refreshToken}}"
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMmIzMC0wNTM0LTc2NzItYWM3Mi1kN2QwMDYzYjRjZWEiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxNzI5Njg3LCJpYXQiOjE3OTE3MjYwODcsImp0aSI6IjJkYmI2YjZhLTNiNGUtNGUzNC05YWRjLWFiOTg2NTlhZTVhNyIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.hbXnRCsyjgCgx19gtv-OrIrc3ndKzUkQDSb4YCcUiS5F06hJ359ReMYVvpxIJBy5kzWpPzsvgL7ZEuD0i1nwDA",
+        "refreshToken": "b388ebf0-3e56-4cd9-a168-bcadfe3e9b94"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

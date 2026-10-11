@@ -13,9 +13,6 @@ http:
         "email": "admin@gmail.com",
         "password": "Admin@123"
       }
-  auth:
-    type: bearer
-    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true
