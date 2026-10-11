@@ -1,0 +1,36 @@
+info:
+  name: Tutor tạo post
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/posts
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDcwNi0yNWYyLTdkY2ItYjI1Mi00YzJiMDZmMzEzZmQiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxMTIzMDMwLCJpYXQiOjE3OTExMTk0MzAsImp0aSI6IjFiNTU1MjJkLWRkNmQtNDkzYi1hMzQxLTllOGJkYmFmZTQ5MSIsInVzZXJuYW1lIjoidHV0b3IuYXBwbGljYXRpb25AZ21haWwuY29tIn0.5Rg5EOlBvGXw54r8uSL5AF3OWOQ6qnq-P4lIx0OhZ0LrTf62gPwWFPKfpNSZvdTWcsIpYY2ik8LmQX8SA7GPAQ
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Gia sư Toán nhận dạy học viên lớp 12",
+        "content": "Có 2 năm kinh nghiệm, nhận dạy ôn thi đại học.",
+        "type": "FIND_STUDENT",
+        "subjectId": "01a106ed-cead-7591-a1b2-f9cf239284c0",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "ONLINE",
+        "minBudget": 100000,
+        "maxBudget": 200000,
+        "sessionsPerWeek": 2,
+        "durationMinutes": 90,
+        "deadline": "2026-12-31T23:59:59Z"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

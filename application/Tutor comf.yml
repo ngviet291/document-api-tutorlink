@@ -1,0 +1,23 @@
+info:
+  name: Tutor comf
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/applications/01a10711-ccb5-7795-b95b-969ff7ce09f1/confirm
+  params:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDcwNi0yNWYyLTdkY2ItYjI1Mi00YzJiMDZmMzEzZmQiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxMTIzMDMwLCJpYXQiOjE3OTExMTk0MzAsImp0aSI6IjFiNTU1MjJkLWRkNmQtNDkzYi1hMzQxLTllOGJkYmFmZTQ5MSIsInVzZXJuYW1lIjoidHV0b3IuYXBwbGljYXRpb25AZ21haWwuY29tIn0.5Rg5EOlBvGXw54r8uSL5AF3OWOQ6qnq-P4lIx0OhZ0LrTf62gPwWFPKfpNSZvdTWcsIpYY2ik8LmQX8SA7GPAQ
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDcwNi0yNWYyLTdkY2ItYjI1Mi00YzJiMDZmMzEzZmQiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxMTIzMDMwLCJpYXQiOjE3OTExMTk0MzAsImp0aSI6IjFiNTU1MjJkLWRkNmQtNDkzYi1hMzQxLTllOGJkYmFmZTQ5MSIsInVzZXJuYW1lIjoidHV0b3IuYXBwbGljYXRpb25AZ21haWwuY29tIn0.5Rg5EOlBvGXw54r8uSL5AF3OWOQ6qnq-P4lIx0OhZ0LrTf62gPwWFPKfpNSZvdTWcsIpYY2ik8LmQX8SA7GPAQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,18 @@
+info:
+  name: Tutor accepted
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/applications/01a1072f-cd1c-7c82-8c4c-20d956575b2f/select
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDcwNi0yNWYyLTdkY2ItYjI1Mi00YzJiMDZmMzEzZmQiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxMTIzMDMwLCJpYXQiOjE3OTExMTk0MzAsImp0aSI6IjFiNTU1MjJkLWRkNmQtNDkzYi1hMzQxLTllOGJkYmFmZTQ5MSIsInVzZXJuYW1lIjoidHV0b3IuYXBwbGljYXRpb25AZ21haWwuY29tIn0.5Rg5EOlBvGXw54r8uSL5AF3OWOQ6qnq-P4lIx0OhZ0LrTf62gPwWFPKfpNSZvdTWcsIpYY2ik8LmQX8SA7GPAQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

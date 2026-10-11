@@ -1,0 +1,33 @@
+info:
+  name: Đăng ký Student
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/auth/register/student
+  body:
+    type: json
+    data: |-
+      {
+        "fullname": "Student Application Test",
+        "email": "student.application@gmail.com",
+        "password": "Student@123",
+        "phone": "0901234567",
+        "gender": "FEMALE",
+        "dateOfBirth": "2005-05-15",
+        "address": {
+          "street": "123 Nguyen Trai",
+          "ward": "Ben Thanh",
+          "province": "Ho Chi Minh City"
+        },
+        "grade": "12",
+        "learningGoal": "Improve Java programming skills"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

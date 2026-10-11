@@ -1,0 +1,37 @@
+info:
+  name: Student post bài
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/posts
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMDcwMy0wOGFhLTdkYzItYTgyZi00YmNmOTY4OWVmNTkiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTExMjI5NTIsImlhdCI6MTc5MTExOTM1MiwianRpIjoiMDE0MjNjODYtODc2Ni00YjllLThkMmUtYjE3YzYyOTAzYjU1IiwidXNlcm5hbWUiOiJzdHVkZW50LmFwcGxpY2F0aW9uQGdtYWlsLmNvbSJ9.kLzEY7Od_1P9vhr06TYdtnnRUKlHcvlCNZWrBQqJyVzGohWZWJ54DzWJfrrfN9-qE0NRCFzajRN1D9xkFoomkQ
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Tìm gia sư Toán lớp 12",
+        "content": "Cần gia sư ôn thi đại học, học 2 buổi mỗi tuần.",
+        "type": "FIND_TUTOR",
+        "subjectId": "01a106ed-cead-7591-a1b2-f9cf239284c0",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "ONLINE",
+        "minBudget": 100000,
+        "maxBudget": 200000,
+        "sessionsPerWeek": 2,
+        "durationMinutes": 90,
+        "deadline": "2026-12-31T23:59:59Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
