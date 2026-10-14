@@ -27,7 +27,9 @@ http:
         "durationMinutes": 90,
         "deadline": "2026-10-15T23:59:59Z"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMmI1Mi1iYmRjLTc1ZmQtODc2Ny0zNjA5YmI0MDI4N2QiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTE3MzE5OTUsImlhdCI6MTc5MTcyODM5NSwianRpIjoiMTMwZWFiNmQtYzYwNi00ZDMzLThjN2UtMmY5YTI4N2VmYjFkIiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.SO8uHUOkHRZYHhfnqK9aCvBX3tZHijbZKQJYoYxOO0-bcozQLExvmHUBKAXf3q_tDrbglkJsjiK_VogGyZp1Ew
 
 settings:
   encodeUrl: true

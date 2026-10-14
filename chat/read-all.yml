@@ -1,0 +1,16 @@
+info:
+  name: read-all
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/v1/chat/channels/01a13980-d640-73e6-8fbc-30637c8b9647/read"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

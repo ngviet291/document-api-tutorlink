@@ -1,0 +1,30 @@
+info:
+  name: send-message
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/chat"
+  body:
+    type: json
+    data: |-
+      {
+        "receiverId": "01a13994-738d-73fa-86a3-61a27ef4a95f",
+        "content": "Hello, how are you?",
+        "mediaList": [
+          {
+            "publicId": "media1",
+            "url": "http://example.com/media1.jpg",
+            "mediaType": "IMAGE"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
