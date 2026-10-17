@@ -3,6 +3,18 @@ variables:
   - name: baseUrl
     value: http://localhost:8080
   - name: subjectId
-    value: 01a12b76-37ae-7e09-99ad-dbc6d5bd9064
+    value: 01a147a8-6c33-756f-aec1-5e4f02f4d6da
   - name: walletId
-    value: 01a12b79-fb0a-7b7b-82ab-3c1f20a6342e
+    value: 01a147ae-5a36-7e64-a23a-69d2ba9626d1
+  - name: tutorToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNDdhOC02ZDc2LTc1NzMtOTQ2Ny1jMTExNjYyZTJhMzIiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMjA3NTI3LCJpYXQiOjE3OTIyMDM5MjcsImp0aSI6ImNkNjYxNDQ2LTQxZmItNDUyMy1iMTdhLTM0MDdkNzY2YzFiZSIsInVzZXJuYW1lIjoidHV0b3JAZ21haWwuY29tIn0.WuANtRHZ4J35OdHMmaH1Qb9GFgcNHxFVCasaatX3D_3KzGFqkd7z1z7LAm1mn-BmrymHV1YXj89tzchJHthEbg
+  - name: studentToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNDdhOC02YzIzLTc0ZjAtYjYxZi0zODE0YjVlZDU3NDkiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIyMDc0MTYsImlhdCI6MTc5MjIwMzgxNiwianRpIjoiNDQxNjUxYjUtZjExNi00OGVhLThiNDctZTgxYjJlZjAyNTM1IiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.lAQ_LChAu3t5Sk5Ys1ADuGFeDlCDOfp5ifmHnNzc1Ni2bew1El46im-ehnSBBT7HRW0K4pS4OCHr6ntPeLonmg
+  - name: adminToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNDdhOC02ZjM0LTdlODMtYjE4Mi01MmNmOWMxMzBkNjkiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMjA3Nzc4LCJpYXQiOjE3OTIyMDQxNzgsImp0aSI6IjA2NjY5YWMwLTg0ZDEtNDkwNS04YmQ3LTJmOTA3NjdhZWNjZCIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.MJZcfIMnbGn_OE5_QMNuH2N0vJra0M7pjSnFI9NGf24joHsSh7yetx59RSY7zHKHlnJVXCqMtVUuj2wffEEIgg
+  - name: postId
+    value: 01a147ac-811f-7146-9f99-fb1d645ea4a9
+  - name: applicationId
+    value: 01a147ae-14e3-742a-8a58-dbde14124fd8
+  - name: transactionId
+    value: 01a147af-8d09-7fc8-80d9-aa2c394fa419

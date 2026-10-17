@@ -1,0 +1,18 @@
+info:
+  name: selectApplication
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications/{{applicationId}}/select"
+  auth:
+    type: bearer
+    token: "{{studentToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
