@@ -1,7 +1,7 @@
 info:
   name: Tutor_cancel
   type: http
-  seq: 18
+  seq: 19
 
 http:
   method: POST
