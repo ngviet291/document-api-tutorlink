@@ -1,0 +1,25 @@
+info:
+  name: reviews?tutorId
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/reviews?tutorId=01a1530b-7727-7ddc-aecc-ad5eaad4d69f&limit=10"
+  params:
+    - name: tutorId
+      value: 01a1530b-7727-7ddc-aecc-ad5eaad4d69f
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTMwYS0wODMzLTc3NTgtOWQ0Mi0yYWU2YTJhNDM1OGIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTgxNDIsImlhdCI6MTc5MjM5NDU0MiwianRpIjoiNTk5MTIzYTktOTM0Mi00ZGM0LWJlZmMtNzI5Yzk0MDdjZjE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.1nuM4qbQE61fXxdL8q_oOeDubKqTT-eF-alkGKnkppuqiPa9XxRO1uXvDFSPtTyckkyt4G_SHgAfce2poZvOrQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

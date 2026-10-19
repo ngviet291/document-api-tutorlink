@@ -1,0 +1,18 @@
+info:
+  name: Student_confirm
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications/01a152a0-013c-7f03-ae0a-8641eff1aa71/confirm"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI3Yy01ZDVhLTczYWYtOTA0Ny1lYmMwMjBkNjQ3M2MiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzODk3NDksImlhdCI6MTc5MjM4NjE0OSwianRpIjoiOGVkZDE1MTctZThkNS00ZGEwLWI0NzEtNjMyM2U3ZGIyZDQ2IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.Qc550soUQnx6uRhRPnw_qXbBsuhyDqSg1T4U64-kuKEUc11yFQC5F097RG73GCnIzH0l2Relt8kHOZvA4JHuCQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

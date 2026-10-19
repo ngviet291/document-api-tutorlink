@@ -1,0 +1,18 @@
+info:
+  name: Tutor_confirm
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications/01a1529d-7227-70dc-9226-77e14c5b922b/confirm"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI4Ni1lOTA4LTc5YWMtYTNlMy02ZjBkZmI3MGQ0MmMiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMzg5ODM4LCJpYXQiOjE3OTIzODYyMzgsImp0aSI6ImJjNTA0YjczLTk1ZjgtNGUwZC04MTA0LTY2NmZmNWJkZjU2ZiIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.tx9ps0ZOiwnIcKYGrEv1ztr1SIrDffhUuErOLbBIap4IaNJlEN5MLiD-wRm3FRIkbyjmEU4K7LJhHpuvQ34uUg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

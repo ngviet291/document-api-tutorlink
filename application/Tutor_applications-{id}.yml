@@ -1,0 +1,18 @@
+info:
+  name: "Tutor_applications/{id} "
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/applications/01a152a0-013c-7f03-ae0a-8641eff1aa71"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI4Ni1lOTA4LTc5YWMtYTNlMy02ZjBkZmI3MGQ0MmMiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMzg5ODM4LCJpYXQiOjE3OTIzODYyMzgsImp0aSI6ImJjNTA0YjczLTk1ZjgtNGUwZC04MTA0LTY2NmZmNWJkZjU2ZiIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.tx9ps0ZOiwnIcKYGrEv1ztr1SIrDffhUuErOLbBIap4IaNJlEN5MLiD-wRm3FRIkbyjmEU4K7LJhHpuvQ34uUg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

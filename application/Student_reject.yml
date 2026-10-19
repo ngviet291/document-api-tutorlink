@@ -1,0 +1,18 @@
+info:
+  name: Student_reject
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications/01a152c4-09be-7cdf-bdfb-648ae923a660/reject"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTJjMS0yMzcyLTc0MzYtOTU2Yi03MjE2ZWI5ODdmZjMiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTMzNjcsImlhdCI6MTc5MjM4OTc2NywianRpIjoiODMzMjAyZGYtNGI1ZC00NjE2LTk3ZmMtMmU3Y2E3MTc4MjliIiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.zDSFuhmPPEaNOtfwsuYrYkLT33a2AdV651BP0QKPd0Z3DkMb-rB8Nyr-EnExqX7wIgyjzcnmVdg_Q0b48_55rg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

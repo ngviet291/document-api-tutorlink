@@ -1,0 +1,25 @@
+info:
+  name: StudentApplicationTutor
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications"
+  body:
+    type: json
+    data: |-
+      {
+        "postId": "01a15299-f41e-75aa-9d5d-09e92427862c",
+        "message": "Em có em học lớp  và muốn đăng ký cho em của em học lớp này."
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI3Yy01ZDVhLTczYWYtOTA0Ny1lYmMwMjBkNjQ3M2MiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzODk3NDksImlhdCI6MTc5MjM4NjE0OSwianRpIjoiOGVkZDE1MTctZThkNS00ZGEwLWI0NzEtNjMyM2U3ZGIyZDQ2IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.Qc550soUQnx6uRhRPnw_qXbBsuhyDqSg1T4U64-kuKEUc11yFQC5F097RG73GCnIzH0l2Relt8kHOZvA4JHuCQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

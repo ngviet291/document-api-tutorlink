@@ -1,0 +1,39 @@
+info:
+  name: Student_post
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/posts"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Tìm gia sư Toán",
+        "content": "Cần tìm gia sư Lý lớp 10, học 3 buổi mỗi tuần tại Quận 7.",
+        "type": "FIND_TUTOR",
+        "subjectId": "01a15278-0394-75d7-8086-46c9b0772c65",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "OFFLINE",
+        "address": {
+          "street": "123",
+          "ward": "Tân Phong",
+          "province": "Hồ Chí Minh"
+        },
+        "minBudget": 100000,
+        "maxBudget": 150000,
+        "sessionsPerWeek": 3,
+        "durationMinutes": 90,
+        "deadline": "2026-11-15T23:59:59Z"
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI3Yy01ZDVhLTczYWYtOTA0Ny1lYmMwMjBkNjQ3M2MiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzODk3NDksImlhdCI6MTc5MjM4NjE0OSwianRpIjoiOGVkZDE1MTctZThkNS00ZGEwLWI0NzEtNjMyM2U3ZGIyZDQ2IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.Qc550soUQnx6uRhRPnw_qXbBsuhyDqSg1T4U64-kuKEUc11yFQC5F097RG73GCnIzH0l2Relt8kHOZvA4JHuCQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

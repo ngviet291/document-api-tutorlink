@@ -1,0 +1,26 @@
+info:
+  name: Review
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/reviews"
+  body:
+    type: json
+    data: |-
+      {
+           "applicationId": "01a1530b-c484-7605-aaa1-3b77dabfd6d0",
+           "rating": 5,
+           "comment": "Gia sư giảng bài dễ hiểu và hỗ trợ rất tốt."
+         }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTMwYS0wODMzLTc3NTgtOWQ0Mi0yYWU2YTJhNDM1OGIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTgxNDIsImlhdCI6MTc5MjM5NDU0MiwianRpIjoiNTk5MTIzYTktOTM0Mi00ZGM0LWJlZmMtNzI5Yzk0MDdjZjE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.1nuM4qbQE61fXxdL8q_oOeDubKqTT-eF-alkGKnkppuqiPa9XxRO1uXvDFSPtTyckkyt4G_SHgAfce2poZvOrQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

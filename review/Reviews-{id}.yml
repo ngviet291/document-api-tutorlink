@@ -1,0 +1,18 @@
+info:
+  name: Reviews/{id}
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/reviews/01a1530d-767d-7610-8523-bea74579d0b6"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTMwYS0wODMzLTc3NTgtOWQ0Mi0yYWU2YTJhNDM1OGIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTgxNDIsImlhdCI6MTc5MjM5NDU0MiwianRpIjoiNTk5MTIzYTktOTM0Mi00ZGM0LWJlZmMtNzI5Yzk0MDdjZjE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.1nuM4qbQE61fXxdL8q_oOeDubKqTT-eF-alkGKnkppuqiPa9XxRO1uXvDFSPtTyckkyt4G_SHgAfce2poZvOrQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,34 @@
+info:
+  name: Tutor_post
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/posts"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Gia sư Lý nhận học sinh lớp 12",
+        "content": "Gia sư có 5 năm kinh nghiệm dạy Toán. muốn tìm người học",
+        "type": "FIND_STUDENT",
+        "subjectId": "01a152c0-1548-7a27-a0ae-411a4e00617a",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "ONLINE",
+        "minBudget": 120000,
+        "maxBudget": 180000,
+        "sessionsPerWeek": 2,
+        "durationMinutes": 90,
+        "deadline": "2026-12-31T23:59:59Z"
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI4Ni1lOTA4LTc5YWMtYTNlMy02ZjBkZmI3MGQ0MmMiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMzg5ODM4LCJpYXQiOjE3OTIzODYyMzgsImp0aSI6ImJjNTA0YjczLTk1ZjgtNGUwZC04MTA0LTY2NmZmNWJkZjU2ZiIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.tx9ps0ZOiwnIcKYGrEv1ztr1SIrDffhUuErOLbBIap4IaNJlEN5MLiD-wRm3FRIkbyjmEU4K7LJhHpuvQ34uUg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

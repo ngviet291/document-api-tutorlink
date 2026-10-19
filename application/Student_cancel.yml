@@ -1,0 +1,18 @@
+info:
+  name: Student_cancel
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/applications/01a152de-568c-7c7a-ba1a-b3f9535b2345/cancel
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTJjMS0yMzcyLTc0MzYtOTU2Yi03MjE2ZWI5ODdmZjMiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTMzNjcsImlhdCI6MTc5MjM4OTc2NywianRpIjoiODMzMjAyZGYtNGI1ZC00NjE2LTk3ZmMtMmU3Y2E3MTc4MjliIiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.zDSFuhmPPEaNOtfwsuYrYkLT33a2AdV651BP0QKPd0Z3DkMb-rB8Nyr-EnExqX7wIgyjzcnmVdg_Q0b48_55rg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
