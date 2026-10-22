@@ -29,7 +29,7 @@ http:
 runtime:
   scripts:
     - type: after-response
-      code: if (res.getStatus() < 300) bru.setEnvVar("postId", res.body.data.id);
+      code: if (res.getStatus() < 300) bru.setEnvVar("transactionId", res.body.data.id);
 
 settings:
   encodeUrl: true

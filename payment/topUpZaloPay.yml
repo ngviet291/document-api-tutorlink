@@ -1,0 +1,27 @@
+info:
+  name: topUpZaloPay
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/payments/wallet/top-up"
+  body:
+    type: json
+    data: '{ "amount": 500000, "paymentMethod": "ZALOPAY" }'
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        if (res.body && res.body.data) {
+          bru.setEnvVar("topUpTransactionId", res.body.data.id);
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
