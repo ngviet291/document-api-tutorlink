@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMmIzMC0wNTM0LTc2NzItYWM3Mi1kN2QwMDYzYjRjZWEiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkxNzI5Njg3LCJpYXQiOjE3OTE3MjYwODcsImp0aSI6IjJkYmI2YjZhLTNiNGUtNGUzNC05YWRjLWFiOTg2NTlhZTVhNyIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.hbXnRCsyjgCgx19gtv-OrIrc3ndKzUkQDSb4YCcUiS5F06hJ359ReMYVvpxIJBy5kzWpPzsvgL7ZEuD0i1nwDA",
-        "refreshToken": "b388ebf0-3e56-4cd9-a168-bcadfe3e9b94"
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExMmI1YS1mNmYxLTc2Y2EtYjUwZC0xYmMyYTZiYTFiZTQiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTE3MzM3NTIsImlhdCI6MTc5MTczMDE1MiwianRpIjoiZmVkNDhlNzMtYjY3NC00MWI5LWI1ZjItNGIwNDZjYjlhZTE1IiwidXNlcm5hbWUiOiJzdHVkZW50QGdtYWlsLmNvbSJ9.Z_mfrB949jWlfvXPIp43M4JMZGOb-LllsXT20geQr48U8SYxsO_jQ80gAKS_k6zucFfJLJk2mxYu_UilaNmLjw",
+        "refreshToken": "f9dbb905-42b7-4f41-bf46-a7cb57c2dd91"
       }
 
 settings:

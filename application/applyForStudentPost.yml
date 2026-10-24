@@ -15,7 +15,7 @@ http:
     type: json
     data: |-
       {
-        "postId": "01a1070e-27e7-7a68-9841-e10a881be4a1",
+        "postId": "01a12b70-a1aa-7810-a4e7-cd8c6b1547a0",
         "message": "Em có kinh nghiệm dạy Toán lớp 12."
       }
   auth: inherit

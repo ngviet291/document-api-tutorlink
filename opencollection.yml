@@ -2,6 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: tutorlink
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmMwZS1hY2IyLTc4MGQtOWRkZS1jMGRkZDhmMmQxN2QiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODE3ODY4LCJpYXQiOjE3OTI4MTQyNjgsImp0aSI6IjcwNzNlYmE1LWQ2ZjEtNDVlOC04ZDRiLWRmZTg2Mjk5NTYxYiIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.WQCC2egTVDb1krmphFoiT-LlnG9dMMNMDidkcRKmU6oWAhTHIGrGttwiLUW1LybVhYznNDW8VCIxG-vpPAzY5w
 bundled: false
 extensions:
   bruno:
