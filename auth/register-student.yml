@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "fullname": "Nguyễn Văn A",
+        "fullName": "Nguyễn Văn A",
         "email": "student33@tutorlink.com",
         "password": "Student@123",
         "phone": "0901234567",
