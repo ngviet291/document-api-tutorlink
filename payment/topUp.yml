@@ -8,7 +8,7 @@ http:
   url: "{{baseUrl}}/api/v1/payments/wallet/top-up"
   body:
     type: json
-    data: '{ "amount": 500000, "paymentMethod": "MOMO" }'
+    data: '{ "amount": 50000, "paymentMethod": "MOMO" }'
   auth: inherit
 
 runtime:

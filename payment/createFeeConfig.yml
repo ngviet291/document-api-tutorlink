@@ -1,0 +1,51 @@
+info:
+  name: createFeeConfig
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/payments/fee-configs"
+  body:
+    type: json
+    data: |-
+      {
+        "feePercentage": 0.20,
+        "fixedFee": 0.00,
+        "effectiveFrom": "2027-01-01"
+      }
+  auth:
+    type: bearer
+    token: "{{adminToken}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        if (res.getStatus() === 201) {
+          bru.setEnvVar("feeConfigId", res.body.data.id);
+        }
+    - type: tests
+      code: |-
+        test("tạo config trả 201", function () {
+          expect(res.getStatus()).to.equal(201);
+        });
+        test("code PAYMENT_201", function () {
+          expect(res.body.code).to.equal("PAYMENT_201");
+        });
+        test("config được tạo thành công", function () {
+          const data = res.body.data;
+          expect(data.id).to.be.a("string");
+          expect(data.feePercentage).to.equal(0.20);
+          expect(data.fixedFee).to.equal(0.00);
+          expect(data.effectiveFrom).to.be.a("string");
+          expect(data.effectiveTo).to.be.null;
+          expect(data.createdByAdminId).to.be.a("string");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

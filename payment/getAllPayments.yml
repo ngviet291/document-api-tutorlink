@@ -5,11 +5,12 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/payments?status=success"
+  url: "{{baseUrl}}/api/v1/payments"
   params:
     - name: status
       value: success
       type: query
+      disabled: true
   auth:
     type: bearer
     token: "{{adminToken}}"
