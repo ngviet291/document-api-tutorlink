@@ -1,0 +1,37 @@
+info:
+  name: create-post copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/posts"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Tìm gia sư Toán lớp 10 tại Quận 7",
+        "content": "Cần tìm gia sư Toán lớp 10, học 3 buổi mỗi tuần tại Quận 7.",
+        "type": "FIND_TUTOR",
+        "subjectId": "01a0e605-af7a-70c4-81fd-6e49c7a6e24e",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "OFFLINE",
+        "address": {
+          "street": "123",
+          "ward": "Tân Phong",
+          "province": "Hồ Chí Minh"
+        },
+        "minBudget": 100000,
+        "maxBudget": 150000,
+        "sessionsPerWeek": 3,
+        "durationMinutes": 90,
+        "deadline": "2026-10-15T23:59:59Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
