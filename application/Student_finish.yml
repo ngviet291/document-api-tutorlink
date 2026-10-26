@@ -1,0 +1,18 @@
+info:
+  name: Student_finish
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications/01a16bfe-bfbe-784c-995b-8e91afc15198/finish"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmJmYi05NWQyLTdkYTMtYTYxYi03NTc1OGU3NjFmMTUiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTI4MTY2MTMsImlhdCI6MTc5MjgxMzAxMywianRpIjoiNzJlYjczMGQtOGEyZS00NjI5LTkxNGEtZGI1ZTU3NDU3MmE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.jIMnJb3bL4IyirkgJ3_tyao-UjrW3ja-FtyyNkjE3FHLy4HrsAJ-zaHlEf5PJIcHm_06xcuDo8pZllKSJVRWOQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

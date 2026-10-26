@@ -1,0 +1,25 @@
+info:
+  name: TutorApplicationStudent
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/applications"
+  body:
+    type: json
+    data: |-
+      {
+        "postId": "01a16c76-67d5-78a2-aa19-eb010af24c19",
+        "message": "Tui dạy được"
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM3NS1mMWQwLTdkNDQtYjZkZS0xYzdkNjVjYTRlZDUiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODI0NjMyLCJpYXQiOjE3OTI4MjEwMzIsImp0aSI6ImFiNGIwYjhiLTM3ZjktNGM4OS05YzRjLTg5YTNiZTdhOGFmYSIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.MNwIlyc0k7LmdHnQg197vDcuQsWQovFvPi0hylQytRdDXIOHvcMG-W1DuAy7d5fW2KF1ZhOvXRPrd4XfVHFSFA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

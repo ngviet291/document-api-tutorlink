@@ -1,0 +1,24 @@
+info:
+  name: Complaint
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/reviews/01a16c7b-b709-7c1a-9de1-29119fc1274d/complaints"
+  body:
+    type: json
+    data: |-
+      {
+        "reason": "Review nay chua thong tin khong dung su that."
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmJmYy1iMDhkLTc2MTEtYjVlNS04ZmE3YTAzNGZlMTYiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODE2Njg1LCJpYXQiOjE3OTI4MTMwODUsImp0aSI6IjA0M2VhNGVlLTczZGUtNGQyOC05NjUzLTZmOTA3ZGZjZGQwOCIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.JCYBL2Kh8vC3CfbI3HYrNIrG8KCvj7RgA3w09m1cBc1WW-oaMK_fxDKa2VsHNjuOMMfSZzjnqIXlO-Ie1qjVyQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
