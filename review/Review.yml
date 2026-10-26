@@ -10,13 +10,13 @@ http:
     type: json
     data: |-
       {
-           "applicationId": "01a1530b-c484-7605-aaa1-3b77dabfd6d0",
+           "applicationId": "01a16c76-bce4-7a38-823e-1ae86a20798a",
            "rating": 5,
            "comment": "Gia sư giảng bài dễ hiểu và hỗ trợ rất tốt."
          }
   auth:
     type: bearer
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTMwYS0wODMzLTc3NTgtOWQ0Mi0yYWU2YTJhNDM1OGIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTgxNDIsImlhdCI6MTc5MjM5NDU0MiwianRpIjoiNTk5MTIzYTktOTM0Mi00ZGM0LWJlZmMtNzI5Yzk0MDdjZjE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.1nuM4qbQE61fXxdL8q_oOeDubKqTT-eF-alkGKnkppuqiPa9XxRO1uXvDFSPtTyckkyt4G_SHgAfce2poZvOrQ
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM3NS00NDcwLTcyN2MtYmFkMi01NTEwZjgzZGQ3MjQiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTI4MjQ1ODksImlhdCI6MTc5MjgyMDk4OSwianRpIjoiMWRhMDkwZDgtOGMwMC00M2ZmLTkxYmItNjcxY2Y5NmVkYTNjIiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.YizkTlWB-5frUWIskTItSvyyGjX1VIXEXHWdO2W3o7QmYm5-dyo7o6OCSBwy9J2Pwf49HUJ8e5OD1IpxwF9pZQ
 
 settings:
   encodeUrl: true

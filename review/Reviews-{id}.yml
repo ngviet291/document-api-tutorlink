@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/reviews/01a1530d-767d-7610-8523-bea74579d0b6"
+  url: "{{baseUrl}}/api/v1/reviews/01a16c7b-b709-7c1a-9de1-29119fc1274d"
   auth:
     type: bearer
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTMwYS0wODMzLTc3NTgtOWQ0Mi0yYWU2YTJhNDM1OGIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTIzOTgxNDIsImlhdCI6MTc5MjM5NDU0MiwianRpIjoiNTk5MTIzYTktOTM0Mi00ZGM0LWJlZmMtNzI5Yzk0MDdjZjE5IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.1nuM4qbQE61fXxdL8q_oOeDubKqTT-eF-alkGKnkppuqiPa9XxRO1uXvDFSPtTyckkyt4G_SHgAfce2poZvOrQ
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM3NS00NDcwLTcyN2MtYmFkMi01NTEwZjgzZGQ3MjQiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTI4MjQ1ODksImlhdCI6MTc5MjgyMDk4OSwianRpIjoiMWRhMDkwZDgtOGMwMC00M2ZmLTkxYmItNjcxY2Y5NmVkYTNjIiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.YizkTlWB-5frUWIskTItSvyyGjX1VIXEXHWdO2W3o7QmYm5-dyo7o6OCSBwy9J2Pwf49HUJ8e5OD1IpxwF9pZQ
 
 settings:
   encodeUrl: true

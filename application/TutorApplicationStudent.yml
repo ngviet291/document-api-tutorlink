@@ -10,12 +10,12 @@ http:
     type: json
     data: |-
       {
-        "postId": "01a15293-8d5a-7f0f-995c-c404e359b1a5",
+        "postId": "01a16c76-67d5-78a2-aa19-eb010af24c19",
         "message": "Tui dạy được"
       }
   auth:
     type: bearer
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI4Ni1lOTA4LTc5YWMtYTNlMy02ZjBkZmI3MGQ0MmMiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMzg5ODM4LCJpYXQiOjE3OTIzODYyMzgsImp0aSI6ImJjNTA0YjczLTk1ZjgtNGUwZC04MTA0LTY2NmZmNWJkZjU2ZiIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.tx9ps0ZOiwnIcKYGrEv1ztr1SIrDffhUuErOLbBIap4IaNJlEN5MLiD-wRm3FRIkbyjmEU4K7LJhHpuvQ34uUg
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM3NS1mMWQwLTdkNDQtYjZkZS0xYzdkNjVjYTRlZDUiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODI0NjMyLCJpYXQiOjE3OTI4MjEwMzIsImp0aSI6ImFiNGIwYjhiLTM3ZjktNGM4OS05YzRjLTg5YTNiZTdhOGFmYSIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.MNwIlyc0k7LmdHnQg197vDcuQsWQovFvPi0hylQytRdDXIOHvcMG-W1DuAy7d5fW2KF1ZhOvXRPrd4XfVHFSFA
 
 settings:
   encodeUrl: true

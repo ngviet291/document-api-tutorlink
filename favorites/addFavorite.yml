@@ -1,0 +1,18 @@
+info:
+  name: addFavorite
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/favorites/01a16c85-4948-723c-8c4f-88cacb0e12ce"
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM4NC1jM2MzLTc3OTItYmJjZi1kYzMxZDlhMzAwZjgiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTI4MjU2MDMsImlhdCI6MTc5MjgyMjAwMywianRpIjoiYzkzOWRkNjQtNTU2NC00NjhiLTgxZWYtODU2YjAxOWIyZWQ3IiwidXNlcm5hbWUiOiJob3h1eWVuMjgwMTA1QGdtYWlsLmNvbSJ9.5rumjVveocgrFDE2VNL8gPuzIhoQG6EirDIME1hOUX_OVUERoK188JB-hj-1LiNE7gGOG96auqrxF9osvgcY2w
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

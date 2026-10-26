@@ -13,7 +13,9 @@ http:
         "email": "Vinh@gmail.com",
         "password": "Tutor@123"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmM4NS00OTQ4LTcyM2MtOGM0Zi04OGNhY2IwZTEyY2UiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODI1NjM3LCJpYXQiOjE3OTI4MjIwMzcsImp0aSI6IjZkMDkwNzIzLTY1ZGQtNDMxNS1iNWRlLWFiOWRjMWQ1YjJhMCIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.BXLaXjWbCLCnFriER0yj8jVdRXBgLf6UxTIyOxbNFZK9z1DxdqnCa4f9ZFifVP4tiW7Lzw_SruuUhEdwS-ufpg
 
 settings:
   encodeUrl: true

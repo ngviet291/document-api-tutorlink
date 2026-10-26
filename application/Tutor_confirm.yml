@@ -5,10 +5,10 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/v1/applications/01a1529d-7227-70dc-9226-77e14c5b922b/confirm"
+  url: "{{baseUrl}}/api/v1/applications/01a16bfe-bfbe-784c-995b-8e91afc15198/confirm"
   auth:
     type: bearer
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNTI4Ni1lOTA4LTc5YWMtYTNlMy02ZjBkZmI3MGQ0MmMiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyMzg5ODM4LCJpYXQiOjE3OTIzODYyMzgsImp0aSI6ImJjNTA0YjczLTk1ZjgtNGUwZC04MTA0LTY2NmZmNWJkZjU2ZiIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.tx9ps0ZOiwnIcKYGrEv1ztr1SIrDffhUuErOLbBIap4IaNJlEN5MLiD-wRm3FRIkbyjmEU4K7LJhHpuvQ34uUg
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmJmYy1iMDhkLTc2MTEtYjVlNS04ZmE3YTAzNGZlMTYiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODE2Njg1LCJpYXQiOjE3OTI4MTMwODUsImp0aSI6IjA0M2VhNGVlLTczZGUtNGQyOC05NjUzLTZmOTA3ZGZjZGQwOCIsInVzZXJuYW1lIjoiVmluaEBnbWFpbC5jb20ifQ.JCYBL2Kh8vC3CfbI3HYrNIrG8KCvj7RgA3w09m1cBc1WW-oaMK_fxDKa2VsHNjuOMMfSZzjnqIXlO-Ie1qjVyQ
 
 settings:
   encodeUrl: true
