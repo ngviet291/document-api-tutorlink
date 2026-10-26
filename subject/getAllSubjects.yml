@@ -5,16 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/v1/subjects"
+  url: "{{baseUrl}}/api/v1/subjects?limit=2&cursor=01a16e07-c355-759e-9f3c-1c099f75961b"
   params:
     - name: limit
       value: "2"
       type: query
-      disabled: true
     - name: cursor
-      value: 01a1089a-e567-778e-ae65-968247429420
+      value: 01a16e07-c355-759e-9f3c-1c099f75961b
       type: query
-      disabled: true
 
 runtime:
   scripts:

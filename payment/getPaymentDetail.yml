@@ -1,0 +1,44 @@
+info:
+  name: getPaymentDetail
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/payments/{{transactionId}}"
+  auth: inherit
+
+docs:
+  content: |-
+    Chi tiết một giao dịch. Admin hoặc chủ giao dịch mới xem được.
+    
+    - Tutor chỉ xem được giao dịch của mình
+    - Admin xem được tất cả
+    
+    Trả 403 nếu không có quyền.
+
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        test("chi tiết giao dịch trả 200", function () {
+          expect(res.getStatus()).to.equal(200);
+        });
+        test("code PAYMENT_200", function () {
+          expect(res.body.code).to.equal("PAYMENT_200");
+        });
+        test("có đầy đủ thông tin transaction", function () {
+          const data = res.body.data;
+          expect(data.id).to.be.a("string");
+          expect(data.type).to.be.oneOf(["TOP_UP", "COMMISSION"]);
+          expect(data.status).to.be.oneOf(["PENDING", "SUCCESS", "FAILED", "REFUNDED"]);
+          expect(data.amount).to.be.a("number");
+          expect(data.tutorId).to.be.a("string");
+        });
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,7 +1,7 @@
 info:
   name: loginTutor
   type: http
-  seq: 6
+  seq: 2
 
 http:
   method: POST
@@ -13,6 +13,11 @@ http:
         "email": "tutor@gmail.com",
         "password": "Tutor@123"
       }
+
+runtime:
+  scripts:
+    - type: after-response
+      code: if (res.getStatus() === 200) bru.setEnvVar("tutorToken", res.body.data.accessToken);
 
 settings:
   encodeUrl: true

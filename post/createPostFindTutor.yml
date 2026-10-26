@@ -1,0 +1,39 @@
+info:
+  name: createPostFindTutor
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/posts"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Tìm gia sư Toán lớp 10",
+        "content": "Cần gia sư Toán lớp 10, học 3 buổi mỗi tuần.",
+        "type": "FIND_TUTOR",
+        "subjectId": "{{subjectId}}",
+        "educationLevel": "HIGH_SCHOOL",
+        "teachingMode": "ONLINE",
+        "minBudget": 100000,
+        "maxBudget": 150000,
+        "sessionsPerWeek": 3,
+        "durationMinutes": 90,
+        "deadline": "2026-12-31T23:59:59Z"
+      }
+  auth:
+    type: bearer
+    token: "{{studentToken}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: if (res.getStatus() < 300) bru.setEnvVar("transactionId", res.body.data.id);
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

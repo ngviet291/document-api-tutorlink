@@ -1,0 +1,27 @@
+info:
+  name: topUpMomo
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/payments/wallet/top-up"
+  body:
+    type: json
+    data: '{ "amount": 50000, "paymentMethod": "MOMO" }'
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        if (res.body && res.body.data) {
+          bru.setEnvVar("topUpTransactionId", res.body.data.id);
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

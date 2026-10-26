@@ -14,7 +14,9 @@ http:
         "description": "Môn Toán đại số và hình học không gian THPT",
         "category": "Toán học"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{adminToken}}"
 
 runtime:
   scripts:

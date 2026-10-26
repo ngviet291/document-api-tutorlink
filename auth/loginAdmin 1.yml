@@ -1,5 +1,5 @@
 info:
-  name: login
+  name: loginAdmin
   type: http
   seq: 1
 
@@ -13,6 +13,11 @@ http:
         "email": "tutor@gmail.com",
         "password": "Tutor@123"
       }
+
+runtime:
+  scripts:
+    - type: after-response
+      code: if (res.getStatus() === 200) bru.setEnvVar("adminToken", res.body.data.accessToken);
 
 settings:
   encodeUrl: true
