@@ -5,4 +5,24 @@ variables:
   - name: subjectId
     value: 01a12b76-37ae-7e09-99ad-dbc6d5bd9064
   - name: walletId
+<<<<<<< HEAD
     value: 01a12b79-fb0a-7b7b-82ab-3c1f20a6342e
+=======
+    value: 01a16e32-a4f3-726a-9e5f-04cdffea6d2c
+  - name: tutorToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExNmUzMi05MzFjLTc3OGItYWFkZS1hZmMyYTM3Y2JjNDgiLCJzY29wZSI6IlRVVE9SIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkyODUzNzcxLCJpYXQiOjE3OTI4NTAxNzEsImp0aSI6IjU3YzZmNGFiLWMwYzktNDAxZi04ZDY5LWExOGMwNTMyYTQ2NiIsInVzZXJuYW1lIjoidHV0b3JAZ21haWwuY29tIn0.FRhETWxwLvprgiQ9ismCDOEQFL-HmJl_p-MhU7wk7v5xB77vu8qakyb7KpuvJzhFZWJ0oi26BswwROUD8_Y_9w
+  - name: studentToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExODU2Yi1lNzc2LTdjYTEtODcwMy1iNjkzMzdlMTMyMmIiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTMyNDM0MTUsImlhdCI6MTc5MzIzOTgxNSwianRpIjoiOTc4NDI4MzEtOTg4OC00NDVmLTkwYzEtODkyNGI5Y2Q5NjhhIiwidXNlcm5hbWUiOiJuZ3V5ZW5waHVvY3RoaW5oMDIwQGdtYWlsLmNvbSJ9.-jMC4li2NRTM1x348fKaxAjZGy9C4gX2dzT95N3MM1NHb2PN8Il3a_OGaxAABFQvRqYAYgTZuS9w1hclhvIiqw
+  - name: adminToken
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExODU3Yy05YTM5LTc0MDItYmRkMy0xMjA1MzQ1YjQwMDIiLCJzY29wZSI6IkFETUlOIiwiaXNzIjoidHV0b3JsaW5rLWJlIiwiZXhwIjoxNzkzMjQ0ODkwLCJpYXQiOjE3OTMyNDEyOTAsImp0aSI6IjFiZDUzMWFhLTIzZjMtNDE0ZS05ZGIzLTFhYTgzMTk5MjBhMiIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIn0.MDNyVIOrlOh89s9Pye1uyNjnloffJidpOWAOpqS2mckCToJCDwh181ISuGWhRpis1nABTacWhe7Pt--MRNFQ8Q
+  - name: postId
+    value: 01a16e3a-f689-76c0-b903-38fe371abc27
+  - name: applicationId
+    value: 01a16e3c-f652-7ed4-9c83-c905cb971fbd
+  - name: transactionId
+    value: 01a16e3d-9579-7273-a9f5-838a5139910c
+  - name: topUpTransactionId
+    value: 01a16e23-5dce-7f4a-8931-63926c46af42
+  - name: feeConfigId
+    value: 01a16e44-deee-77a0-ab37-fdee86afb7f1
+>>>>>>> 5e66610 (Init(user): find TUtor)

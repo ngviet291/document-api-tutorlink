@@ -1,0 +1,23 @@
+info:
+  name: resetPass
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/auth/reset-password"
+  body:
+    type: json
+    data: |-
+      {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwMWExODU3Yy1lOWI1LTc1OTgtYWYxYy05NWU3N2E0YTEyZmUiLCJzY29wZSI6IlNUVURFTlQiLCJpc3MiOiJ0dXRvcmxpbmstYmUiLCJleHAiOjE3OTMyNDQ1MTgsImlhdCI6MTc5MzI0MDkxOCwianRpIjoiOTBkMDI0ZTktMTI0NC00NGQ5LTk4ZWItYTY1MTQyMjFmZTU0IiwidXNlcm5hbWUiOiJuZ3V5ZW5waHVvY3RoaW5oMDIwQGdtYWlsLmNvbSJ9.Atisd3E3uHUvHSIfLePFrna2ehTrgsMFSpGNg0qTWFucA8Pu17MzC3E6emK2lJgpbezgRObHujK2MyuI3WAPfg",
+        "newPassword": "Admin@1234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
